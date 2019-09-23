@@ -11,6 +11,39 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
+nav {
+  width: 100vw;
+}
+
+.header__main {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 25px 1px 15px 1px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.hero-text-box {
+  margin: 35px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 900px;
+  text-align: left;
+}
+
+.hero-text-box h1 {
+  display: inline;
+  font-size: 6.4rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  top: -8rem;
+  left: 0;
+}
+
 .video-header {
   min-height: calc(100vh - 160px);
   display: flex;
@@ -106,7 +139,7 @@ h6 {
 
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../../assets/images/JaanaBanaana.jpg");
+      url("../../../assets/images/JaanaBanaana.jpg");
     background-position: top 20% right 100%;
     background-size: 120%;
     background-attachment: fixed;

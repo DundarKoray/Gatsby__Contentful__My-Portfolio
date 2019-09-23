@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Button from "../../components/Button"
+import Button from "../../Button"
 import { Link } from "react-scroll"
 import "./styles.css"
 
@@ -27,7 +27,7 @@ function useInterval(callback, delay) {
 const HeroVideo = props => {
   const [width, setWidth] = useState(1500)
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       setWidth(window.innerWidth)
       window.addEventListener("resize", () => {
         setWidth(window.innerWidth)
@@ -37,8 +37,7 @@ const HeroVideo = props => {
 
   const [position, setPosition] = useState(0)
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-
+    if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => {
         setPosition(window.pageYOffset)
       })
@@ -46,7 +45,9 @@ const HeroVideo = props => {
   }, [position])
   const getHeaderTitles = useStaticQuery(graphql`
     {
-      headerTitles: allContentfulHeader(sort: { fields: [number], order: ASC }) {
+      headerTitles: allContentfulHeaderTitles(
+        sort: { fields: [number], order: ASC }
+      ) {
         edges {
           node {
             id
@@ -110,11 +111,11 @@ const HeroVideo = props => {
     >
       <div
         className="fullscreen-video-wrap"
-      // style={width > 767 && position > 500 ? { height: "86vh" } : null}
+        // style={width > 767 && position > 500 ? { height: "86vh" } : null}
       >
         <video autoPlay loop muted className="bg-video">
           <source
-            src={require("../../assets/videos/hero-video.mp4")}
+            src={require("../../../assets/videos/hero-video.mp4")}
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -122,7 +123,7 @@ const HeroVideo = props => {
       </div>
       <div
         className="header-overlay"
-      // style={width > 767 && position > 500 ? { height: "86vh" } : null}
+        // style={width > 767 && position > 500 ? { height: "86vh" } : null}
       ></div>
       <div className="header-content">
         <div className="animate-text-container">

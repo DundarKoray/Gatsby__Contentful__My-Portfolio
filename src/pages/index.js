@@ -2,7 +2,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ServiceList from "../components/ServiceList"
 import Form from "../components/Form"
-import HeroVideo from "../components/HeroVideo"
+import HeroVideo from "../components/Header/HeroVideo"
+import HeroImage from "../components/Header/HeroImage"
 import Testimonials from "../components/Testimonials"
 import AboutMe from "../components/AboutMe"
 import { graphql, useStaticQuery } from "gatsby"
@@ -14,7 +15,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <HeroVideo />
+      {/* <HeroVideo /> */}
+      <HeroImage />
       <AboutMe
         image={aboutme.image.fixed.src}
         text={aboutme.description.description}
