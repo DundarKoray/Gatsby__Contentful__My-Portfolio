@@ -10,7 +10,7 @@ import "./styles.css"
 
 const getSocialMediaLinks = graphql`
   {
-    links:allContentfulSocialMediaLinks {
+    links: allContentfulSocialMediaLinks {
       edges {
         node {
           id
@@ -25,15 +25,16 @@ const getSocialMediaLinks = graphql`
 class Footer extends Component {
   render() {
     return (
-      <StaticQuery query={getSocialMediaLinks} render={data => {
-        const { links } = data;
-        return (
-          <footer className="footer">
-            <div className="container">
-              <div className="footer-wrapper">
-                <div className="icons">
-                  {
-                    links.edges.map(({ node: item }) => {
+      <StaticQuery
+        query={getSocialMediaLinks}
+        render={data => {
+          const { links } = data
+          return (
+            <footer className="footer">
+              <div className="container">
+                <div className="footer-wrapper">
+                  <div className="icons">
+                    {links.edges.map(({ node: item }) => {
                       return (
                         <a
                           className="social-media-icons"
@@ -42,37 +43,33 @@ class Footer extends Component {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {
-                            item.link.includes('facebook')
-                              ? <FaFacebook /> : null
-                          }
-                          {
-                            item.link.includes('twitter')
-                              ? <FaTwitterSquare /> : null
-                          }
-                          {
-                            item.link.includes('linkedin')
-                              ? <FaLinkedin /> : null
-                          }
-                          {
-                            item.link.includes('instagram')
-                              ? <FaInstagram /> : null
-                          }
+                          {item.link.includes("facebook") ? (
+                            <FaFacebook />
+                          ) : null}
+                          {item.link.includes("twitter") ? (
+                            <FaTwitterSquare />
+                          ) : null}
+                          {item.link.includes("linkedin") ? (
+                            <FaLinkedin />
+                          ) : null}
+                          {item.link.includes("instagram") ? (
+                            <FaInstagram />
+                          ) : null}
                         </a>
-
                       )
-                    })
-                  }
+                    })}
+                  </div>
+                  <p>
+                    Copyright &copy; 2019 Koray Dündar
+                    <br />
+                    Built with ♡ in Helsinki
+                  </p>
                 </div>
-                <p>
-                  Copyright &copy; 2019 Jaana Aalto-Setälä <br />
-                  Built with ♡ by Integrify developers
-                </p>
               </div>
-            </div>
-          </footer>
-        )
-      }} />
+            </footer>
+          )
+        }}
+      />
     )
   }
 }
