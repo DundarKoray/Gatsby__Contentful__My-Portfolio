@@ -1,0 +1,102 @@
+.subtitle,
+.credits {
+  font-family: "Raleway", sans-serif;
+}
+
+.card {
+  width: 32%;
+  margin-bottom: 2rem;
+  background: #fffaf0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.info {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 210px;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.credits {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  font-weight: 100;
+}
+
+.info p {
+  padding: 1rem 0 1rem 0;
+}
+
+.image > div {
+  height: 35rem;
+}
+
+.btn-small button {
+  padding: 1rem 2.5rem;
+}
+
+.blog-link {
+  color: var(--mainBlack);
+}
+
+.read {
+  padding: 1rem 2.3rem;
+
+  text-decoration: underline;
+  margin: 0 auto;
+  background: transparent;
+  outline: none;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+  /* .card {
+    width: 45%;
+  } */
+
+  .image > div {
+  height: 20rem;
+}
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 400px;
+  }
+  .info {
+    height: auto;
+  }
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+
+  .image > div {
+  height: 35rem;
+}
+
+  
+}

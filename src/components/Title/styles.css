@@ -1,0 +1,65 @@
+.title-h2-dark,
+.title-h2-light {
+  text-align: center;
+  font-size: 6.8rem;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.title-h2-dark {
+  color: var(--mainGreen);
+}
+.title-h2-light {
+  color: white;
+}
+
+.title-h3-dark,
+.title-h3-light {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 5px 0;
+}
+.title-h3-light {
+  color: white;
+}
+.title-h3-dark {
+  color: var(--mainGreen);
+}
+
+.title-h4-dark {
+  line-height: 1.2;
+  font-size: 6rem;
+  font-weight: 100;
+  padding: 5px 0;
+  color: var(--mainGreen);
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+  .title-h2-dark,
+  .title-h2-light {
+    font-size: 4rem;
+    padding-bottom: 20px;
+  }
+
+  .title-h4-dark {
+    line-height: 1.2;
+    font-size: 4rem;
+    font-weight: 100;
+    padding: 5px 0;
+    color: var(--mainGreen);
+  }
+}

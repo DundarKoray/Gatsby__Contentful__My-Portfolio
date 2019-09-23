@@ -1,0 +1,73 @@
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+  background: transparent;
+  outline: none;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-primary,
+.btn-secondary {
+  transition: all 0.2s ease-in-out;
+  padding: 2.1rem 3.4rem;
+  border: 1px solid var(--mainGold);
+}
+
+.btn-primary {
+  color: white;
+}
+
+.btn-secondary {
+  color: var(--mainBlack);
+}
+
+.btn-tertiary {
+  padding: 1rem 2.3rem;
+  color: var(--mainBlack);
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: var(--mainGold);
+  color: var(--mainBlack);
+}
+.btn-secondary:hover {
+  background-color: var(--mainGold);
+  color: white;
+}
+
+.btn-tertiary:hover {
+  color: var(--mainGold);
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .btn-primary,
+  .btn-secondary {
+    padding: 15px 28px;
+  }
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 23px;
+  }
+}

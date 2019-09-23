@@ -1,0 +1,141 @@
+.service-page-section {
+  padding: 80px 0;
+}
+
+.service-page-text {
+  width: 55%;
+  padding: 1rem;
+}
+.client-name {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  flex-shrink: 1;
+}
+.service-page-title {
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  color: var(--mainGold);
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+
+.service-page-paragraph {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+  line-height: 1.8;
+}
+
+.service-page-image {
+  width: 40%;
+  -webkit-box-shadow: -38px 38px 0px -26px rgba(212, 175, 55, 1);
+  -moz-box-shadow: -38px 38px 0px -26px rgba(212, 175, 55, 1);
+  box-shadow: -36px 36px 0px -26px rgba(212, 175, 55, 1);
+}
+
+.service-page-image img {
+  width: 100%;
+  display: block;
+}
+
+.sp-body-title {
+  font-family: "Playfair Display", serif;
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--mainGreen);
+  margin: 15rem 0 3rem 0;
+  padding: 1rem;
+}
+
+.sp-body-text {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  width: 70%;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) { 
+
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) { 
+
+
+}
+
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .service-page-section {
+  padding: 3rem 2rem;
+  margin-top: 83.16px;
+}
+
+  .service-page-title {
+  
+  font-size: 3.5rem;
+  
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+
+.service-page-image {
+  width: 45%;
+  box-shadow: none;
+}
+
+.sp-body-title {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--mainGreen);
+  margin: 3rem 0 .5rem 0;
+}
+
+.sp-body-text {
+  width: 100%;
+}
+}
+
+
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {  
+
+  .about-me-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .service-page-text {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+  .service-page-image {
+  width: 55%;
+  box-shadow: none;
+}
+
+.service-page-paragraph {
+  width: 100%;
+  
+}
+
+.sp-body-text {
+  
+  width: 100%;
+  
+}
+
+
+}

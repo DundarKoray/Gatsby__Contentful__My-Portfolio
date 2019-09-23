@@ -1,0 +1,105 @@
+.form-content {
+  width: 60%;
+  height: 100%;
+  padding: 3rem;
+  background-color: #fcf1ca;
+}
+
+.mobile-form-section {
+  padding: 3rem 0;
+}
+
+.form-content-text,
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+input,
+textarea {
+  margin-bottom: 5px;
+  padding: 10px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.submit-button {
+  color: white;
+  background-color: var(--mainGreen);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: var(--footerGreen);
+}
+
+.form-image {
+  width: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-image img {
+  width: 100%;
+  display: block;
+  height: initial;
+}
+
+.headline {
+  margin-bottom: 2rem;
+}
+.address {
+  font-size: 1.8rem;
+  color: var(--mainGreen);
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .form-section {
+    padding: 0 0 0 0;
+  }
+
+  .mobile-form-section {
+    padding: 0;
+  }
+
+  
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+  .form-content {
+    width: 100%;
+  }
+
+  .form-content-text {
+    width: 100%;
+  }
+
+  .form-image {
+    display: none;
+  }
+
+  .form-fields {
+    width: 100%;
+  }
+
+  
+}

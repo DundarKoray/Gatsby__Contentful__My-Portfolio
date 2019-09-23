@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway:300,400,600,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --mainGold: #d4af37;
+  --mainGreen: #082b03;
+  --mainBlack: #051a02;
+  --lightYellow: #fff8e0;
+  --footerGreen: #136207;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Playfair Display", "Raleway", serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  padding: 16rem 0;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 58.5%;
+  }
+
+  .container {
+    max-width: 1100px;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+  html {
+    font-size: 52.8%;
+  }
+
+  .container {
+    max-width: 923px;
+  }
+
+  .section {
+    padding: 8rem 0;
+  }
+}
+
+/* Small tablets to big phone:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 48.2%;
+  }
+
+  body {
+    margin-top: 83.16px;
+  }
+
+  .container {
+    max-width: 767px;
+  }
+
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .flex-wrapper {
+    flex-wrap: wrap;
+  }
+}

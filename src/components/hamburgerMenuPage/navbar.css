@@ -1,0 +1,88 @@
+.header-wrapper {
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  height: 82px;
+  background-color: rgb(8, 8, 8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 2px rgb(8, 8, 8);
+}
+
+.company-logo-mobile {
+  margin: 0.2rem 0.2rem 0.2rem 2rem;
+
+  width: 70px;
+  height: 70px;
+}
+
+.align {
+  align-items: center;
+}
+
+.company-name-mobile {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+.toggle-icon {
+  font-size: 3.8rem;
+  color: var(--mainGold);
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.link-wrapper {
+  height: 300px;
+  list-style: none;
+  position: absolute;
+  text-align: right;
+  z-index: 1000;
+}
+
+.link-wrapper-open {
+  height: 300px;
+  width: 100vw;
+  transition: all 0.8s ease-in-out;
+  overflow: hidden;
+  text-align: right;
+}
+
+.link-wrapper-close {
+  height: 0;
+  width: 100vw;
+  transition: all 0.8s ease-in-out;
+  overflow: hidden;
+  text-align: right;
+}
+
+.nav-link {
+  display: inline-block;
+  font-family: "Raleway", "sans-serif";
+  font-size: 1.8rem;
+  width: 110px;
+  text-decoration: none;
+  background: rgb(8, 8, 8);
+  padding: 1rem 2rem 1rem 2rem;
+  color: #efefef;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background: #555;
+  color: red;
+  padding: 1rem 3rem 1rem 2rem;
+}

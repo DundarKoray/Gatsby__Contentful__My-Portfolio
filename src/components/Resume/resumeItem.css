@@ -1,0 +1,158 @@
+.row-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 7rem auto;
+}
+
+.job-title,
+.company-name {
+  color: var(--mainGreen);
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+}
+
+.job-title{
+  font-size: 3rem; 
+}
+
+.working-date {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+}
+
+.company-name{
+  
+
+  font-weight: bold;
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.experience-title {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-top: -1.2rem;
+  color: var(--mainGreen);
+  flex-grow: 1;
+  margin-bottom: 7rem;
+}
+
+.company-box {
+  font-size: 2.1rem;
+  font-weight: 300;
+}
+
+.job-box {
+  width: 70%;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 0 0 0 4rem;
+}
+
+.location-container {
+  display: flex;
+  margin-top: 2.5rem;
+}
+
+.location-icon {
+  color: var(--mainGold);
+  margin-right: 0.5rem;
+}
+
+.ul {
+  list-style: none; /* Remove default bullets */
+  margin-left: 25px;
+}
+
+.ul .lang-list::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--mainGold); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  font-size: 2.8rem;
+}
+
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) { 
+  .experience-title {
+  margin-bottom: 5rem;
+}
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) { 
+.experience-title {
+  margin-bottom: 4rem;
+}
+
+}
+
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .experience-title{
+        font-size: 5.6rem;
+        flex-grow: 0;
+            text-decoration: underline;
+    text-underline-position: under;
+        margin-top: 3rem;
+  }
+
+  .location-container {
+    margin-top: 1rem;
+    display: block;
+  }
+
+  .row-container {
+    padding: 0 1rem 0 1rem;
+    flex-direction: column;
+    margin: 0 auto;
+    
+        justify-content: stretch;
+}
+
+.company-box {
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.job-box {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.working-date {
+  display: block;
+  margin-left: 0;
+}
+
+.company-name{
+  display: block;
+}
+
+
+
+
+}
+
+
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {  
+.experience-title {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+}

@@ -1,0 +1,58 @@
+.service-section {
+  background: black;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.normal-text {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  padding: 0 0 60px 0;
+}
+
+.gold-text {
+  color: var(--mainGold);
+}
+
+.normal-text {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  padding: 0 0 60px 0;
+}
+
+.gold-text {
+  color: var(--mainGold);
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+  .normal-text {
+    font-size: 4.5rem;
+  }
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .normal-text {
+    font-size: 4rem;
+  }
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+}

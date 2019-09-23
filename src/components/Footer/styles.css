@@ -1,0 +1,54 @@
+.footer {
+  padding: 40px 0;
+  background-color: var(--mainGreen);
+  color: var(--mainGold);
+  font-size: 1.8rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.social-icon-component {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-icons {
+  color: var(--mainGold);
+  font-size: 2.4rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20rem;
+  margin: 0 auto 3rem auto;
+}
+
+.footer-wrapper {
+  text-align: center;
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding: 20px 0;
+  }
+
+  .icons {
+    margin: 0 auto 0.5rem auto;
+  }
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+}

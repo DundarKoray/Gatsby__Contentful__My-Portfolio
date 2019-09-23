@@ -1,0 +1,47 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-blog {
+  padding: 3rem 0;
+}
+
+.posts {
+  padding: 4rem 1.5rem;
+}
+.posts h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-size: 48px;
+}
+.posts h4 {
+  text-transform: capitalize;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  height: 60px;
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .flex-container {
+    justify-content: center;
+  }
+
+  .posts h4 {
+    height: 100%;
+  }
+}

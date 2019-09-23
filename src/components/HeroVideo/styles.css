@@ -1,0 +1,151 @@
+body {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.video-header {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.video-container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* transform: translate(-150%, -20%); */
+  z-index: 2;
+  margin-left: 4rem;
+}
+
+.header-content h1 {
+  display: inline;
+  font-size: 6.4rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  top: -8rem;
+  left: 0;
+}
+
+.animate-text-container {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.animate-text {
+  position: absolute;
+  border-right: 0.2rem solid rgb(255, 255, 255);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .bg-video,
+  .header-overlay {
+    display: none;
+  }
+
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../assets/images/JaanaBanaana.jpg");
+    background-position: top 20% right 100%;
+    background-size: 120%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .video-header {
+    height: 100vh;
+  }
+
+  .header-content h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+  .header-content h1 {
+    font-size: 4.5rem;
+  }
+
+  .animate-text-container {
+    margin-bottom: 0rem;
+  }
+
+  .header-content {
+    margin-left: 2rem;
+  }
+
+  header {
+    background-position: top 50% right 100%;
+  }
+
+  .video-header {
+    height: 80vh;
+  }
+}
+
+/* Remove extra space from bottom of component */
+/* #gatsby-focus-wrapper > div nav {
+  display: none;
+} */

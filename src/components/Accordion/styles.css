@@ -1,0 +1,35 @@
+.accordion {
+  background-color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.textArea {
+  background-color: white;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+}

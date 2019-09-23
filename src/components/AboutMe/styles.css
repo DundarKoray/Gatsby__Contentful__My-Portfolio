@@ -1,0 +1,134 @@
+.about-me-text {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-text h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 6.8rem; /*68 pixels*/
+  color: var(--mainGreen);
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+}
+
+.about-me-text p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem; /*24 pixels*/
+  width: 90%;
+  flex-grow: 1;
+  margin-bottom: 8rem;
+}
+
+.about-me-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about_me_image {
+  width: 600px;
+  height: 600px;
+  -webkit-box-shadow: -38px 38px 0px -26px rgba(212, 175, 55, 1);
+  -moz-box-shadow: -38px 38px 0px -26px rgba(212, 175, 55, 1);
+  box-shadow: -36px 36px 0px -26px rgba(212, 175, 55, 1);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: 71% 1%;
+  background-attachment: fixed;
+}
+
+.about_me_image img {
+  width: 100%;
+  display: block;
+}
+
+.highlight {
+  color: var(--mainGold);
+}
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .about_me_image {
+    height: 500px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: inherit;
+  }
+
+  .about-me-text h1 {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+  }
+
+  .about-me-text p {
+    margin-bottom: 6rem;
+  }
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+  .about_me_image {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .about-me-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+  .about_me_image {
+    height: 300px;
+    width: 300px;
+  }
+
+  .about-me-text h1 {
+    line-height: 1;
+    font-size: 5.5rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .about-me-text {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-me-text p {
+    margin-bottom: 3.5rem;
+  }
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+  .about-me-text {
+    width: 90%;
+  }
+
+  .about_me_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--mainGold);
+    box-shadow: none;
+  }
+
+  .about-me-text p {
+    margin-bottom: 3rem;
+  }
+
+  .about-me-text h1 {
+    line-height: 1;
+    margin-top: 2rem;
+    font-size: 4.5rem;
+    text-align: center;
+  }
+}
