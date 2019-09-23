@@ -44,7 +44,7 @@
   font-size: 7rem;
   text-transform: uppercase;
   text-align: center;
-  color: var(--mainGreen);
+  color: var(--mainBlack);
   margin: 15rem 0 3rem 0;
   padding: 1rem;
 }
@@ -97,7 +97,7 @@
 .sp-body-title {
   font-size: 6rem;
   text-transform: uppercase;
-  color: var(--mainGreen);
+  color: var(--mainBlack);
   margin: 3rem 0 .5rem 0;
 }
 

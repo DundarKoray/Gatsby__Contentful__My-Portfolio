@@ -31,6 +31,14 @@ const NavBar = () => {
           }
         }
       }
+      navLogo: contentfulNavbarLogo {
+        
+          id
+          firstName
+          lastName
+          
+        
+      }
     }
   `)
 
@@ -47,7 +55,7 @@ const NavBar = () => {
                   : "navbar-company-name-black"
               }
             >
-              Jaana <br /> Aalto-Setälä
+              {getNavBar.navLogo.firstName} <br /> {getNavBar.navLogo.lastName}
             </p>
             <ul className="navbar-nav-custom">
               {getNavBar.navLinks.edges.map(({ node: item }) => {
@@ -67,14 +75,14 @@ const NavBar = () => {
                         {item.link}
                       </ScrollLink>
                     ) : (
-                      <Link
-                        className={"navbar-link"}
-                        to={`/en/#${item.link === "home" ? "" : item.link}`}
-                        activeClassName={"navbar-link-active"}
-                      >
-                        {item.link}
-                      </Link>
-                    )}
+                        <Link
+                          className={"navbar-link"}
+                          to={`/en/#${item.link === "home" ? "" : item.link}`}
+                          activeClassName={"navbar-link-active"}
+                        >
+                          {item.link}
+                        </Link>
+                      )}
                   </li>
                 )
               })}

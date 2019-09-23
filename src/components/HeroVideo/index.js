@@ -46,11 +46,12 @@ const HeroVideo = props => {
   }, [position])
   const getHeaderTitles = useStaticQuery(graphql`
     {
-      headerTitles: allContentfulHeader {
+      headerTitles: allContentfulHeader(sort: { fields: [number], order: ASC }) {
         edges {
           node {
             id
             titles
+            number
           }
         }
       }

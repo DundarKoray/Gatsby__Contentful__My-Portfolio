@@ -6,7 +6,7 @@
 
 .job-title,
 .company-name {
-  color: var(--mainGreen);
+  color: var(--mainBlack);
   font-family: "Playfair Display", serif;
   font-weight: 300;
 }
@@ -34,7 +34,7 @@
   font-size: 5rem;
   font-weight: 600;
   margin-top: -1.2rem;
-  color: var(--mainGreen);
+  color: var(--mainBlack);
   flex-grow: 1;
   margin-bottom: 7rem;
 }

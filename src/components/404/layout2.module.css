@@ -17,13 +17,13 @@
 .main h1 {
   font-size: 5rem;
   font-weight: 600;
-  color: var(--mainGreen);
+  color: var(--mainBlack);
 }
 
 .main h3 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: var(--mainGreen);
+  color: var(--mainBlack);
   margin-bottom: 2rem;
 }
 

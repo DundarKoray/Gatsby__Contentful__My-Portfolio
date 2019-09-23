@@ -6,7 +6,7 @@
   padding-bottom: 30px;
 }
 .title-h2-dark {
-  color: var(--mainGreen);
+  color: var(--mainBlack);
 }
 .title-h2-light {
   color: white;
@@ -22,7 +22,7 @@
   color: white;
 }
 .title-h3-dark {
-  color: var(--mainGreen);
+  color: var(--mainBlack);
 }
 
 .title-h4-dark {
@@ -30,7 +30,7 @@
   font-size: 6rem;
   font-weight: 100;
   padding: 5px 0;
-  color: var(--mainGreen);
+  color: var(--mainBlack);
 }
 
 /*-------------------------MEDIA QUERIES-----------------------*/
@@ -60,6 +60,6 @@
     font-size: 4rem;
     font-weight: 100;
     padding: 5px 0;
-    color: var(--mainGreen);
+    color: var(--mainBlack);
   }
 }
