@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Button from "../../Button"
 import { Link } from "react-scroll"
+import BackgroundImage from 'gatsby-background-image'
 import "../HeroVideo/styles.css"
 
 function useInterval(callback, delay) {
@@ -113,25 +114,27 @@ const HeroImage = props => {
     setCurrentIndex(currentIndex++)
   }, typeSpeed)
 
-  let background = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( ${getHeaderTitles.backgroundImage.heroImage.fluid.src})`,
-  }
+  let background = [
+    `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))`, getHeaderTitles.backgroundImage.heroImage.fluid
+  ]
 
   return (
-    <header id="home" style={background} className="header__main">
-      <div className="container">
-        <div className="hero-text-box">
-          <div className="animate-text-container">
-            <h1 className="animate-text">{text}</h1>
-          </div>
-          <div className="trigger-btn">
-            <Link to="contact" smooth={true} offset={50} duration={2000}>
-              <Button text="HIRE ME TODAY!" styleClass="btn-primary" />
-            </Link>
+    <BackgroundImage fluid={background} className={"header__main"}>
+      <header id="home">
+        <div className="container">
+          <div className="hero-text-box">
+            <div className="animate-text-container">
+              <h1 className="animate-text">{text}</h1>
+            </div>
+            <div className="trigger-btn">
+              <Link to="contact" smooth={true} offset={50} duration={2000}>
+                <Button text="HIRE ME TODAY!" styleClass="btn-primary" />
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </BackgroundImage >
   )
 }
 
