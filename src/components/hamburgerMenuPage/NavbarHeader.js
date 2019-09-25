@@ -11,7 +11,7 @@ const getNavigationLogo = graphql`
       firstName
       lastName
       logo {
-        fixed(width: 70) {
+        fixed(width: 65) {
           base64
           aspectRatio
           width
@@ -43,7 +43,7 @@ class NavbarHeader extends Component {
                     fixed={data.navLogo.logo.fixed}
                   />
                   <p className="company-name-mobile">
-                    {data.navLogo.firstName} <br /> {data.navLogo.lastName}
+                    {data.navLogo.firstName} {data.navLogo.lastName}
                   </p>
                 </div>
               </Link>
