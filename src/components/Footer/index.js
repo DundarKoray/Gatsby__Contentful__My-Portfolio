@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaTwitterSquare,
   FaLinkedin,
+  FaGithub,
 } from "react-icons/fa"
 import "./styles.css"
 
@@ -55,6 +56,7 @@ class Footer extends Component {
                           {item.link.includes("instagram") ? (
                             <FaInstagram />
                           ) : null}
+                          {item.link.includes("github") ? <FaGithub /> : null}
                         </a>
                       )
                     })}
