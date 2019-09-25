@@ -29,7 +29,7 @@ nav {
 .hero-text-box {
   margin: 35px;
   position: absolute;
-  top: 50%;
+  top: 52%;
   transform: translateY(-50%);
   max-width: 900px;
   text-align: left;
@@ -169,6 +169,16 @@ nav {
     margin-left: 2rem;
   }
 
+  .hero-text-box {
+    margin: 0px;
+    top: 60;
+    left: 3%;
+  }
+
+  .hero-text-box h1 {
+    font-size: 5.5rem;
+  }
+
   header {
     background-position: top 50% right 100%;
   }
@@ -182,3 +192,8 @@ nav {
 /* #gatsby-focus-wrapper > div nav {
   display: none;
 } */
+@media only screen and (max-width: 430px) {
+  .hero-text-box h1 {
+    font-size: 4rem;
+  }
+}
