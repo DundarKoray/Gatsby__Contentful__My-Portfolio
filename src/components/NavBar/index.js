@@ -79,6 +79,8 @@ const NavBar = () => {
                         activeClass={"navbar-link-active"}
                         to={item.link}
                         smooth={true}
+                        spy={true}
+                        hashSpy={false}
                         offset={-60}
                         duration={1200}
                         className={
