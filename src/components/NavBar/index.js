@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { Link as ScrollLink } from "react-scroll"
-import "./styles.css"
-
 import Img from "gatsby-image"
+import "./styles.css"
 
 const NavBar = () => {
   const [position, setPosition] = useState(0)
