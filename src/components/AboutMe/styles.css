@@ -29,19 +29,19 @@
 }
 
 .about_me_image {
-  width: 600px;
+  width: 52%;
   height: 600px;
   -webkit-box-shadow: -38px 38px 0px -26px rgba(212, 175, 55, 1);
   -moz-box-shadow: -38px 38px 0px -26px rgba(212, 175, 55, 1);
   box-shadow: -36px 36px 0px -26px rgba(212, 175, 55, 1);
   background-repeat: no-repeat;
-  background-size: 26%;
-  background-position: 63% 50%;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position: 63% 20%;
 }
 
 .about_me_image img {
   width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -54,12 +54,7 @@
 /* Big tablet to 1200px (width smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {
   .about_me_image {
-    height: 500px;
-    width: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: inherit;
+    /* width: 500px; */
   }
 
   .about-me-text h1 {
@@ -75,8 +70,7 @@
 /* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
 @media only screen and (max-width: 1023px) {
   .about_me_image {
-    height: 400px;
-    width: 400px;
+    /* width: 400px; */
   }
 }
 
@@ -86,8 +80,8 @@
     flex-wrap: wrap-reverse;
   }
   .about_me_image {
-    height: 300px;
-    width: 300px;
+    /* width: 300px; */
+    height: 400px;
   }
 
   .about-me-text h1 {
@@ -119,6 +113,7 @@
     border-radius: 50%;
     border: 4px solid var(--mainGold);
     box-shadow: none;
+    overflow: hidden;
   }
 
   .about-me-text p {

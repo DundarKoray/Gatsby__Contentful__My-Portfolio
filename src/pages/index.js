@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
       {/* <HeroVideo /> */}
       <HeroImage />
       <AboutMe
-        image={aboutme.image.fixed.src}
+        image={aboutme.image.fluid}
         text={aboutme.description.description}
         title1={aboutme.title1}
         title2={aboutme.title2}
@@ -42,11 +42,9 @@ export const query = graphql`
         description
       }
       image {
-        fixed(quality: 100) {
+        fluid(quality: 100) {
           base64
           aspectRatio
-          width
-          height
           src
           srcSet
           srcWebp
