@@ -7,7 +7,7 @@
 }
 
 .inside {
-  background: var(--mainGold);
+  background: #333;
   position: relative;
 }
 
@@ -31,8 +31,8 @@
 }
 
 .inside__pic {
-  transition: all 0.3s;
-  transform: scale(1);
+  transition: all 0.5s;
+  transform: scale(1.05);
 }
 
 .inside__link:hover .inside__pic {

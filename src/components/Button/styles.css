@@ -46,6 +46,11 @@
   color: var(--mainGold);
 }
 
+.small-button {
+  padding: 1.5rem 2.9rem;
+  font-size: 1rem;
+}
+
 /*-------------------------MEDIA QUERIES-----------------------*/
 
 /* Big tablet to 1200px (width smaller than the 1140px row) */
