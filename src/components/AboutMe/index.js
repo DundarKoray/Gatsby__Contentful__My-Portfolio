@@ -1,7 +1,7 @@
 import React from "react"
 import Button from "../Button"
 import { Link } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+import Img from "gatsby-image"
 import "./styles.css"
 
 const AboutMe = ({ image, text, title1, title2, title3 }) => {
@@ -22,7 +22,11 @@ const AboutMe = ({ image, text, title1, title2, title3 }) => {
               </Link>
             </div>
           </div>
-          <BackgroundImage className="about_me_image" fluid={image} />
+          <Img
+            className="about_me_image"
+            fluid={image}
+            imgStyle={{ objectPosition: "center top" }}
+          />
           {/* <div style={imgStyles} className="about_me_image"></div> */}
         </div>
       </div>

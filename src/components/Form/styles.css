@@ -39,15 +39,6 @@ textarea {
 
 .form-image {
   width: 40%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.form-image img {
-  width: 100%;
-  display: block;
-  height: initial;
 }
 
 .headline {
@@ -79,8 +70,6 @@ textarea {
   .mobile-form-section {
     padding: 0;
   }
-
-  
 }
 
 /* Small Phones: from 0 to 480 px such as Iphone 5*/
@@ -100,6 +89,4 @@ textarea {
   .form-fields {
     width: 100%;
   }
-
-  
 }

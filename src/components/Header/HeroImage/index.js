@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Button from "../../Button"
 import { Link } from "react-scroll"
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from "gatsby-background-image"
 import "../HeroVideo/styles.css"
 
 function useInterval(callback, delay) {
@@ -61,7 +61,6 @@ const HeroImage = props => {
         heroImage {
           fluid {
             base64
-            tracedSVG
             aspectRatio
             src
             srcSet
@@ -115,7 +114,8 @@ const HeroImage = props => {
   }, typeSpeed)
 
   let background = [
-    `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))`, getHeaderTitles.backgroundImage.heroImage.fluid
+    `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))`,
+    getHeaderTitles.backgroundImage.heroImage.fluid,
   ]
 
   return (
@@ -134,7 +134,7 @@ const HeroImage = props => {
           </div>
         </div>
       </header>
-    </BackgroundImage >
+    </BackgroundImage>
   )
 }
 

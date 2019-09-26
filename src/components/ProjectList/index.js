@@ -41,7 +41,7 @@ const ProjectList = () => {
     //         })}
     //     </div>
     // </section>
-    <section className="section portfolio-section" id="portlofio">
+    <section className="section portfolio-section" id="portfolio">
       <div className="container">
         <p className="portfolio-text">
           I provide <span className="gold-text">high quality</span> Event
@@ -60,7 +60,7 @@ const ProjectList = () => {
         </div>
         <div className="button-wrapper">
           <Link to="/en/portfolio">
-            <Button styleClass="btn-primary" text="Learn more" />
+            <Button styleClass="btn-primary" text="Check All Projects" />
           </Link>
         </div>
       </div>
