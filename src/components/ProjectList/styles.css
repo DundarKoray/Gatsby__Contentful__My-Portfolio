@@ -1,0 +1,99 @@
+.portfolio {
+  padding: 80px 0;
+  background: white;
+}
+
+.portfolio-section {
+  background: black;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-text {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  padding: 0 0 60px 0;
+}
+
+.gold-text {
+  color: var(--mainGold);
+}
+
+.portfolio__container {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.heading-container {
+  max-width: 1050px;
+  padding: 5px;
+  margin: 0 auto 10px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.heading-container p {
+  margin-bottom: 25px;
+}
+
+.portfolio__button {
+  border: solid 1px #b4b4b4;
+  font-size: 80%;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.heading-title {
+  font-size: 200%;
+
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.heading-title--white {
+  color: white;
+}
+
+.heading-title--dark {
+  color: #2b2b2b;
+}
+
+
+/*-------------------------MEDIA QUERIES-----------------------*/
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px (IPAD) to 1023px (landscape tablet) */
+@media only screen and (max-width: 1023px) {
+  .portfolio-text {
+    font-size: 4.5rem;
+  }
+}
+
+/* Small phones to small tablets:481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .portfolio-text {
+    font-size: 4rem;
+  }
+}
+
+/* Small Phones: from 0 to 480 px such as Iphone 5*/
+@media only screen and (max-width: 480px) {
+}

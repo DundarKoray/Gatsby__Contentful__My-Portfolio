@@ -1,6 +1,6 @@
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ServiceList from "../components/ServiceList"
+
 import Form from "../components/Form"
 import HeroVideo from "../components/Header/HeroVideo"
 import HeroImage from "../components/Header/HeroImage"
@@ -9,6 +9,7 @@ import AboutMe from "../components/AboutMe"
 import { graphql, useStaticQuery } from "gatsby"
 import BlogList from "../components/Blogs"
 import React from "react"
+import ProjectList from "../components/ProjectList"
 
 const IndexPage = ({ data }) => {
   const { aboutme, blogpost } = data
@@ -24,7 +25,8 @@ const IndexPage = ({ data }) => {
         title2={aboutme.title2}
         title3={aboutme.title3}
       />
-      <ServiceList />
+      {/* <ServiceList /> */}
+      <ProjectList />
       <Testimonials />
       <BlogList posts={blogpost.edges} />
       <Form />

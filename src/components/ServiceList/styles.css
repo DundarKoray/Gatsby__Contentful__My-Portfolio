@@ -22,16 +22,6 @@
   color: var(--mainGold);
 }
 
-.normal-text {
-  color: white;
-  font-size: 5rem;
-  text-align: center;
-  padding: 0 0 60px 0;
-}
-
-.gold-text {
-  color: var(--mainGold);
-}
 
 /*-------------------------MEDIA QUERIES-----------------------*/
 

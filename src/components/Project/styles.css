@@ -1,0 +1,45 @@
+.portfolio__photos {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.inside {
+  background: var(--mainGold);
+  position: relative;
+}
+
+.portfolio__hidden-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  opacity: 0;
+  color: white;
+  transition: all 0.2s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__hidden-title span {
+  border: 1px white solid;
+  padding: 15px;
+}
+
+.inside__pic {
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.inside__link:hover .inside__pic {
+  opacity: 0.2;
+  transform: scale(1.2);
+}
+
+.inside__link:hover .portfolio__hidden-title {
+  opacity: 1;
+}
