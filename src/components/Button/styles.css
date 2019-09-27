@@ -67,6 +67,11 @@
   .btn-secondary {
     padding: 15px 28px;
   }
+
+  .small-button {
+  
+  font-size: 1.5rem;
+}
 }
 
 /* Small Phones: from 0 to 480 px such as Iphone 5*/
