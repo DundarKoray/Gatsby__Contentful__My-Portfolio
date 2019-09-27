@@ -2,9 +2,9 @@ require("dotenv").config() //eslint-disable-line
 
 module.exports = {
   siteMetadata: {
-    title: `Jaana Aalto-Setälä`,
-    description: `I offer Project Management, Career Coaching and Team Leadership advice and guidance to professionals aiming to improve their soft skills in these areas.`,
-    author: `Jaana Aalto-Setälä`,
+    title: `Koray Dündar`,
+    description: `I am graduated with a BBA in Innovative Business Services from Satakunta University of Applied Sciences in 2015. Since my graduation I've been constantly learning front end technologies, focusing mainly on JavaScript and its libraries such as React. I've also experience in video & photo production. I am looking for an opportunity where I am able to learn more and improve my coding skills to a further degree. Don't forget to check out my porftfolio and resume!`,
+    author: `Koray Dündar`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/jaana-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
