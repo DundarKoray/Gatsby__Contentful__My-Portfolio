@@ -14,6 +14,7 @@ const portfolio = () => {
           node {
             title
             order
+            link
             image {
               fixed(height: 240, width: 320) {
                 base64
@@ -41,7 +42,7 @@ const portfolio = () => {
         <section id="portfolio-page" class="portfolio">
           <div class="portfolio__container">
             {getProject.allProject.edges.map(({ node: item }) => {
-              return <Project image={item.image.fixed} title={item.title} />
+              return <Project link={item.link} image={item.image.fixed} title={item.title} />
             })}
           </div>
         </section>
