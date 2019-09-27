@@ -17,9 +17,9 @@ const AboutMe = ({ image, text, title1, title2, title3 }) => {
             </h1>
             <p>{text}</p>
             <div>
-              <Link to={"/en/resume"}>
+              <a href="https://drive.google.com/file/d/1_r6g4VqszAGyyNE-o4UP9y7X1Rw2Pf9D/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Button styleClass="btn-secondary" text="My Resume" />
-              </Link>
+              </a>
             </div>
           </div>
           <Img

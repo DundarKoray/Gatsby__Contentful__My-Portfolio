@@ -53,6 +53,11 @@
   width: 100%;
 }
 
+resume-sub {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /*-------------------------MEDIA QUERIES-----------------------*/
 
