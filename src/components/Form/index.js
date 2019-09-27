@@ -46,7 +46,7 @@ const Form = () => {
                     </div>
                     <form
                       className="form-fields"
-                      action="https://formspree.io/hari.basnet@integrify.io"
+                      action="https://formspree.io/koraydundar_40@hotmail.com"
                       method="POST"
                     >
                       <input
