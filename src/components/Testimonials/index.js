@@ -40,7 +40,7 @@ class Testimonials extends Component {
         {
           breakpoint: 767,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
           },

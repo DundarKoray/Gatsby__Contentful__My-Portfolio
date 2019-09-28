@@ -10,7 +10,7 @@
   font-size: 6.8rem; /*68 pixels*/
   color: var(--mainBlack);
   text-transform: uppercase;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   margin-top: 6rem;
 }
 
@@ -19,7 +19,11 @@
   font-size: 1.8rem; /*24 pixels*/
   width: 90%;
   flex-grow: 1;
-  margin-bottom: 8rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-me-text :last-child {
+  margin-top: 1.5rem;
 }
 
 .about-me-wrapper {
@@ -47,10 +51,6 @@
   .about-me-text h1 {
     margin-bottom: 2rem;
     margin-top: 4rem;
-  }
-
-  .about-me-text p {
-    margin-bottom: 6rem;
   }
 
   .about_me_image {
@@ -92,10 +92,6 @@
     align-items: center;
     text-align: center;
   }
-
-  .about-me-text p {
-    margin-bottom: 3.5rem;
-  }
 }
 
 /* Small Phones: from 0 to 480 px such as Iphone 5*/
@@ -112,10 +108,6 @@
     border: 4px solid var(--mainGold);
     box-shadow: none;
     overflow: hidden;
-  }
-
-  .about-me-text p {
-    margin-bottom: 3rem;
   }
 
   .about-me-text h1 {

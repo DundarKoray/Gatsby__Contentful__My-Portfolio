@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import "./styles.css"
 
-const AboutMe = ({ image, text, title1, title2, title3 }) => {
+const AboutMe = ({ image, text1, text2, text3, title1, title2, title3 }) => {
   const imgStyles = { backgroundImage: `url(${image})` }
   return (
     <section className="section about-me" id="about">
@@ -15,9 +15,15 @@ const AboutMe = ({ image, text, title1, title2, title3 }) => {
               {title1} <br /> <span className="highlight">{title2} </span>
               {title3}
             </h1>
-            <p>{text}</p>
+            <p>{text1}</p>
+            <p>{text2}</p>
+            <p>{text3}</p>
             <div>
-              <a href="https://drive.google.com/open?id=1ldd5yu_H-_ecu0H8Ji_g_HfUEn0u_llM" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://drive.google.com/open?id=1ldd5yu_H-_ecu0H8Ji_g_HfUEn0u_llM"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button styleClass="btn-secondary" text="My Resume" />
               </a>
             </div>

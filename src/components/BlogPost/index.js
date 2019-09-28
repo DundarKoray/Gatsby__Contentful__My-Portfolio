@@ -13,6 +13,7 @@ const BlogPost = ({ post }) => {
         <div className={blogPostStyles.image}>
           <Image fluid={img} />
         </div>
+
         <div className={blogPostStyles.info}>
           <h2 className={blogPostStyles.title}>{title}</h2>
           <h5 className={blogPostStyles.credits}>

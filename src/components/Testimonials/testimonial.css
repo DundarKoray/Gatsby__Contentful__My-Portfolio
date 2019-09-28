@@ -75,13 +75,14 @@
   .testimonial {
     margin: 0 1.5rem;
   }
+
+  .testimonial {
+    width: 80%;
+    height: 150px;
+    margin: 0 auto 1.5rem auto;
+  }
 }
 
 /* Small Phones: from 0 to 480 px such as Iphone 5*/
 @media only screen and (max-width: 480px) {
-  .testimonial {
-    width: 90%;
-    height: 150px;
-    margin: 0 auto 1.5rem auto;
-  }
 }

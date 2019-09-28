@@ -20,7 +20,9 @@ const IndexPage = ({ data }) => {
       <HeroImage />
       <AboutMe
         image={aboutme.image.fluid}
-        text={aboutme.description.description}
+        text1={aboutme.description1.description1}
+        text2={aboutme.description2.description2}
+        text3={aboutme.description3.description3}
         title1={aboutme.title1}
         title2={aboutme.title2}
         title3={aboutme.title3}
@@ -40,9 +42,16 @@ export const query = graphql`
       title1
       title2
       title3
-      description {
-        description
+      description1 {
+        description1
       }
+      description2 {
+        description2
+      }
+      description3 {
+        description3
+      }
+
       image {
         fluid(quality: 100) {
           base64
@@ -64,9 +73,10 @@ export const query = graphql`
           author
           publishedDate(formatString: "MMMM Do, YYYY")
           image {
-            fluid(maxWidth: 250, maxHeight: 300) {
+            fluid {
               base64
               aspectRatio
+              sizes
               src
               srcSet
               srcWebp
