@@ -16,10 +16,11 @@ const getPosts = graphql`
           author
           publishedDate(formatString: "MMMM Do, YYYY")
           image {
-            fluid(maxWidth: 250, maxHeight: 300) {
+            fluid {
               base64
               aspectRatio
               src
+              sizes
               srcSet
               srcWebp
               srcSetWebp
@@ -37,7 +38,9 @@ export default () => {
   return (
     <Layout>
       <SEO title="Blog posts" />
-      <SubPageHeader><Title2 text="Blog Posts" styleClass="title-h2-light" /></SubPageHeader>
+      <SubPageHeader>
+        <Title2 text="Blog Posts" styleClass="title-h2-light" />
+      </SubPageHeader>
       <BlogList posts={posts} />
     </Layout>
   )
