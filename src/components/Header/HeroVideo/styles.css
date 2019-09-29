@@ -137,6 +137,10 @@ nav {
     display: none;
   }
 
+  .header__main {
+    background-attachment: none;
+  }
+
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("../../../assets/images/JaanaBanaana.jpg");
