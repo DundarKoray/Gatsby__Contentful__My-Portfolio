@@ -41,7 +41,9 @@ export default () => {
       <SubPageHeader>
         <Title2 text="Blog Posts" styleClass="title-h2-light" />
       </SubPageHeader>
-      <BlogList posts={posts} />
+      <section style={{ backgroundColor: "#f4f4f4" }}>
+        <BlogList posts={posts} />
+      </section>
     </Layout>
   )
 }
