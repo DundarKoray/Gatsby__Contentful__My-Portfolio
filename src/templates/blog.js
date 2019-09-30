@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
+import SubPageHeader from "../components/SubPageHeader"
 
 const postTemplate = ({ data }) => {
   const {
@@ -23,6 +24,7 @@ const postTemplate = ({ data }) => {
   return (
     <Layout>
       <SEO title={`${title}`} />
+      <SubPageHeader height={15} />
       <section className={blogTemplateStyles.template}>
         <div className="container">
           <Link to={`/blog/`} className={blogTemplateStyles.btnSmall}>
