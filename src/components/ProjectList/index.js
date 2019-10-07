@@ -44,8 +44,8 @@ const ProjectList = () => {
     <section className="section portfolio-section" id="portfolio">
       <div className="container">
         <p className="portfolio-text">
-          I provide <span className="gold-text">high quality</span> Event
-          Management, Leadership Development and Project Management.
+          I'm a dedicated <span className="gold-text">front-end</span> web developer.
+          I've been creating apps using React, Gatsby, GraphQL and Contentful.
         </p>
         <div className="portfolio__container">
           {getProject.allProject.edges.slice(0, 6).map(({ node: item }) => {
