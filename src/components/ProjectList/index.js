@@ -44,7 +44,7 @@ const ProjectList = () => {
     <section className="section portfolio-section" id="portfolio">
       <div className="container">
         <p className="portfolio-text">
-          I'm a dedicated <span className="gold-text">front-end</span> web developer.
+          I'm a dedicated <span className="gold-text">Front-End</span> Web Developer.
           I've been creating apps using React, Gatsby, GraphQL and Contentful.
         </p>
         <div className="portfolio__container">
