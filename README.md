@@ -13,6 +13,6 @@ The site is also fully responsive on different devices.
 * Gatsby
 * Contentful
 * GraphQL
-* Responsive Website
+
 
 
