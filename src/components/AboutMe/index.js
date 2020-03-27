@@ -20,7 +20,7 @@ const AboutMe = ({ image, text1, text2, text3, title1, title2, title3 }) => {
             <p>{text3}</p>
             <div>
               <a
-                href="https://drive.google.com/open?id=1ldd5yu_H-_ecu0H8Ji_g_HfUEn0u_llM"
+                href="https://drive.google.com/open?id=1jfZm8MY3wXE_BROqRth5TczLvdHN2vQZ"
                 target="_blank"
                 rel="noopener noreferrer"
               >
